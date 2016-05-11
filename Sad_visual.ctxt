@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Sad_visual()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Sad_visual\r\n
+comment1.params=g2
+comment1.target=void\ drawCircles(java.awt.Graphics2D)
+comment2.params=g2\ layer
+comment2.target=void\ drawRipples(java.awt.Graphics2D,\ int)
+comment3.params=g2\ circ
+comment3.target=void\ drawOutLine(java.awt.Graphics2D,\ java.awt.geom.Ellipse2D)
+comment4.params=g2\ layer
+comment4.target=void\ drawWaves(java.awt.Graphics2D,\ int)
+comment5.params=g2\ layer
+comment5.target=void\ drawDrops(java.awt.Graphics2D,\ int)
+comment6.params=
+comment6.target=void\ move()
+numComments=7

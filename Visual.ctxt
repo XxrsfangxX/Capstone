@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=backgroundColor\ primaryColor\ secondaryColor\ tertiaryColor\ quaternaryColor\ quinaryColor\ primeSpeed
+comment0.target=Visual(java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ int)
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Visual\r\n
+comment1.params=
+comment1.target=java.awt.Color\ getBackgroundColor()
+comment2.params=
+comment2.target=int\ getPrimarySpeed()
+comment3.params=
+comment3.target=java.awt.Color\ getPrimaryColor()
+comment4.params=
+comment4.target=java.awt.Color\ getSecondaryColor()
+comment5.params=
+comment5.target=java.awt.Color\ getTertiaryColor()
+comment6.params=
+comment6.target=java.awt.Color\ getQuaternaryColor()
+comment7.params=
+comment7.target=java.awt.Color\ getQuinaryColor()
+numComments=8

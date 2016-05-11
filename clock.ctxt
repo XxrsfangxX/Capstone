@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=main
+comment0.target=clock(MainViewer)
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Timer\r\n
+comment1.params=
+comment1.target=void\ run()
+numComments=2

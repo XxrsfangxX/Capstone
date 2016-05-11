@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MainViewer()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ MainViewer\r\n
+comment1.params=
+comment1.target=void\ clear()
+comment2.params=mood1
+comment2.target=void\ changeMood(java.lang.String)
+comment3.params=
+comment3.target=void\ on()
+comment4.params=
+comment4.target=void\ toggleOnOff()
+comment5.params=g
+comment5.target=void\ paintComponent(java.awt.Graphics)
+comment6.params=
+comment6.target=void\ nextFrame()
+numComments=7
