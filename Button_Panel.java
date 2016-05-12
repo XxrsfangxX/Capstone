@@ -18,10 +18,12 @@ public class Button_Panel extends JPanel
     private JButton sadButton;
     private JToggleButton onOrOff;
     private MainViewer canvas;
+    private LoopSound sound;
     private boolean on_off;
     
-    public Button_Panel(MainViewer canvas){
+    public Button_Panel(MainViewer canvas, LoopSound sound){
         this.canvas= canvas; 
+        this.sound= sound;
         on_off=false;
         this.sadButton= new JButton("Sad");
          ButtonListener moodListener= new ButtonListener();
@@ -49,7 +51,7 @@ public class Button_Panel extends JPanel
                if(on_off==true){
  
                    canvas.toggleOnOff();
-                    
+                    sound.playSound();
               }
             
 

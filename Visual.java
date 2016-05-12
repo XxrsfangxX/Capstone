@@ -25,40 +25,43 @@ public abstract class Visual
     {
         this.backgroundColor= backgroundColor;
         this.primarySpeed= primeSpeed;
- 
+
         this.primaryColor= primaryColor;
         this.secondaryColor= secondaryColor;
         this.tertiaryColor= tertiaryColor;
         this.quaternaryColor= quaternaryColor;
         this.quinaryColor= quinaryColor;
     }
-    
+
     public Color getBackgroundColor(){
         return backgroundColor;
     }
-    
+
     public int getPrimarySpeed(){
         return primarySpeed;
-        
+
     }
-    
 
     
     public Color getPrimaryColor(){
         return primaryColor;
     }
+
     public Color getSecondaryColor(){
         return secondaryColor;
     }
+
     public Color getTertiaryColor(){
         return tertiaryColor;
     }
+
     public Color getQuaternaryColor(){
         return quaternaryColor;
     }
-    
+
     public Color getQuinaryColor(){
         return quinaryColor;
     }
-    
+
 }
+

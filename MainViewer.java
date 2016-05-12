@@ -53,99 +53,96 @@ public class MainViewer extends JPanel
 
             Sad_visual sad= new Sad_visual();
             if(count<100){
-            if(count%2==0){
-                g2.setColor(sad.getPrimaryColor());
-                for(int i= 0; i<(Math.random()*100); i++){
-                    sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    sad.drawRipples(g2,count);
-                    if(i%5==0){
-                        g2.setColor(sad.getQuinaryColor());
-                    }
-                    else if(i%4==0){
-                        g2.setColor(sad.getQuaternaryColor());
-                        
-                    }
-                    else if(i%3==0){
-                        g2.setColor(sad.getTertiaryColor());
-                        
-                    }
-                    else if(i%2==0){
-                        g2.setColor(sad.getPrimaryColor());
-                        
-                    }
-                    else{
-                       g2.setColor(sad.getSecondaryColor()); 
-                    }
-                    
-                
+                if(count%2==0){
+                    g2.setColor(sad.getPrimaryColor());
+                    for(int i= 0; i<(Math.random()*100); i++){
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawRipples(g2,count);
+                        if(i%5==0){
+                            g2.setColor(sad.getQuinaryColor());
+                        }
+                        else if(i%4==0){
+                            g2.setColor(sad.getQuaternaryColor());
+
+                        }
+                        else if(i%3==0){
+                            g2.setColor(sad.getTertiaryColor());
+
+                        }
+                        else if(i%2==0){
+                            g2.setColor(sad.getPrimaryColor());
+
+                        }
+                        else{
+                            g2.setColor(sad.getSecondaryColor()); 
+                        }
+
                      
-                     sad.drawWaves(g2,count);
-                }
-                g2.setColor(sad.getSecondaryColor()); 
-               
-              
+                        sad.drawWaves(g2,count);
+                    }
+                    g2.setColor(sad.getSecondaryColor()); 
+
                 
+                }
+                else{
+                    g2.setColor(sad.getSecondaryColor());
+                    for(int i= 0; i<(Math.random()*100); i++){
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawRipples(g2,count);
+                        if(i%5==0){
+                            g2.setColor(sad.getQuinaryColor());
+                        }
+                        else if(i%4==0){
+                            g2.setColor(sad.getQuaternaryColor());
+
+                        }
+                        else if(i%3==0){
+                            g2.setColor(sad.getTertiaryColor());
+
+                        }
+                        else if(i%2==0){
+                            g2.setColor(sad.getSecondaryColor());
+
+                        }
+                        else{
+                            g2.setColor(sad.getPrimaryColor()); 
+                        }
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+                        sad.drawCircles(g2);
+
+                        sad.drawWaves(g2,count);
+                    }
+                    g2.setColor(sad.getPrimaryColor()); 
+
+              
+                }
+
+                if(count==50){
+                    for(int i=0; i<1000; i++){
+                        sad.drawDrops(g2, i);
+                    }
+                }
+                count++;
             }
             else{
-                g2.setColor(sad.getSecondaryColor());
-                for(int i= 0; i<(Math.random()*100); i++){
-                        sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                     sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                     sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    sad.drawRipples(g2,count);
-                    if(i%5==0){
-                        g2.setColor(sad.getQuinaryColor());
-                    }
-                    else if(i%4==0){
-                        g2.setColor(sad.getQuaternaryColor());
-                        
-                    }
-                    else if(i%3==0){
-                        g2.setColor(sad.getTertiaryColor());
-                        
-                    }
-                    else if(i%2==0){
-                        g2.setColor(sad.getSecondaryColor());
-                        
-                    }
-                    else{
-                       g2.setColor(sad.getPrimaryColor()); 
-                    }
-                     sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                     sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                     sad.drawCircles(g2);
-                    sad.drawCircles(g2);
-                    
-                    sad.drawWaves(g2,count);
-                }
-                g2.setColor(sad.getPrimaryColor()); 
-                  
-               
-              
-            }
-            
-            if(count==50){
-                for(int i=0; i<1000; i++){
-                sad.drawDrops(g2, i);
-            }
-            }
-            count++;
-        }
-        else{
 
-            count=0;
-            
-        }
+                count=0;
+
+            }
         }
         else{
 
@@ -157,3 +154,4 @@ public class MainViewer extends JPanel
 
     }
 }
+

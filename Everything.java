@@ -1,7 +1,11 @@
-
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
 import java.util.Timer;
+
+import java.net.URL;
+import javax.swing.*;
+import javax.sound.sampled.*;
+
 /**
  * Write a description of class Everything here.
  * 
@@ -36,16 +40,23 @@ public class Everything
         
     }
     
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
         try{
         MainViewer main= new MainViewer();
-        Button_Panel butt= new Button_Panel(main);
         
+        LoopSound sound= new LoopSound();
+        Button_Panel butt= new Button_Panel(main, sound);
+        //Creates main viewer and button panel
         Timer t= new Timer();
-        t.scheduleAtFixedRate(new clock(main), 100,100);
+
+        //Creates timer and sets the time
+
+        t.scheduleAtFixedRate(new clock(main), 0,15);
+       
         Everything every= new Everything(main, butt);
-
-
+        //crafts the program
+        
+ 
     }
     catch(Exception InterruptedException){
     
@@ -53,3 +64,4 @@ public class Everything
     }
 
 }
+

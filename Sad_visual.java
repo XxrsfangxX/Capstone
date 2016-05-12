@@ -14,7 +14,6 @@ public class Sad_visual extends Visual
     private Color backgroundColor;
     private int primarySpeed;
 
-    
     /**
      * Default constructor for objects of class Sad_visual
      */
@@ -23,11 +22,8 @@ public class Sad_visual extends Visual
         //Constructs Sad Visual
         super(Color.black,Color.blue, Color.cyan, new Color(89,15,132),new Color(9,19,82),new Color(94,129,225), 100);
 
-        
     }
-
     public void drawCircles(Graphics2D g2){
-
         //Constructs random circles within the area;
         Ellipse2D.Double tempCirc= new Ellipse2D.Double(Math.random()*1000-100,Math.random()*1000-100,(+10)*(8), (14)*(9));
 
@@ -35,9 +31,7 @@ public class Sad_visual extends Visual
         g2.fill(tempCirc);
         //Draws and fills circles
 
-    
     }
-
     public void drawRipples(Graphics2D g2, int layer){
         layer= 100- layer;
         int length= (int) Math.random()*layer*10+10;
@@ -76,11 +70,12 @@ public class Sad_visual extends Visual
     }
 
     public void drawDrops(Graphics2D g2, int layer){
-        
+
         Ellipse2D.Double drop= new Ellipse2D.Double( 500 ,0+layer, 50, 50);
-        
+
     }
 
     public void move(){
     }
 }
+
