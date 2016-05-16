@@ -11,7 +11,7 @@ public class LoopSound {
     Clip clip;
 
     public LoopSound(){
-        this.sadFile= new File("Sad_Music.wav");
+        this.sadFile= new File("Sad_Music.file");
 
     }
 
@@ -28,6 +28,7 @@ public class LoopSound {
 
         }
         catch(Exception e){
+            System.out.println("File not Found");
             
         }
 
