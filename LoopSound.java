@@ -11,7 +11,7 @@ public class LoopSound {
     Clip clip;
 
     public LoopSound(){
-        this.sadFile= new File("Sad_Music.file");
+        this.sadFile= new File("Sad_Music.wav");
 
     }
 
